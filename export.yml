@@ -7,6 +7,8 @@
   tasks:
     - name: Export all assets
       awx.awx.export:
+        controller_host='http://10.14.1.42:30175'
+
         #job_templates: 'all'
         #projects: 'all'
         all: True
