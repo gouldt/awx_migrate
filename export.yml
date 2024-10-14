@@ -7,10 +7,10 @@
   tasks:
     - name: Export all assets
       awx.awx.export:
-        #controller_host: 'https://10.14.1.42'
-        #validate_certs: false
-        #controller_username: 'admin'
-        #controller_password: 'X1mlSZRhVAxixdMASV8gQEcxFc5kHLnt'
+        controller_host: 'https://10.14.1.42:30175/'
+        validate_certs: false
+        controller_username: 'admin'
+        controller_password: 'X1mlSZRhVAxixdMASV8gQEcxFc5kHLnt'
         job_templates: 'all'
         #projects: 'all'
         #all: True
