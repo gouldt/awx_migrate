@@ -1,6 +1,6 @@
 ---
 - name: Export all assets
-  hosts: localhost
+  hosts: awx
   connection: local
   gather_facts: false
 
