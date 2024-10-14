@@ -20,6 +20,6 @@
     - name: Save export to file
       copy:
         content: "{{ export_output['assets'] }}"
-        dest: export.json
+        dest: /etc/awx/exports/export.json
       delegate_to: localhost
 
