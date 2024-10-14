@@ -7,13 +7,13 @@
   tasks:
     - name: Export all assets
       awx.awx.export:
-        controller_host: 'https://10.14.1.42'
-        validate_certs: false
-        controller_username: 'admin'
-        controller_password: 'X1mlSZRhVAxixdMASV8gQEcxFc5kHLnt'
-        #job_templates: 'all'
+        #controller_host: 'https://10.14.1.42'
+        #validate_certs: false
+        #controller_username: 'admin'
+        #controller_password: 'X1mlSZRhVAxixdMASV8gQEcxFc5kHLnt'
+        job_templates: 'all'
         #projects: 'all'
-        all: True
+        #all: True
       register: export_output
       delegate_to: localhost
 
