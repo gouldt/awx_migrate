@@ -12,14 +12,14 @@
         controller_username: 'admin'
         controller_password: 'siB24Bsr21yghE3SIMnPQtk3lGLNqB84'
         #job_templates: 'all'
-        #projects: 'all'
-        all: true
+        projects: 'migrate'
+        #all: true
       register: export_output
       delegate_to: localhost
 
     - name: Save export to file
       copy:
         content: "{{ export_output['assets'] }}"
-        dest: /etc/awx/exports/export.json
+        dest: /etc/awx/exports/exportProject.json
       delegate_to: localhost
 
