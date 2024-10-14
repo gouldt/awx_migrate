@@ -11,9 +11,9 @@
         #validate_certs: false
         controller_username: 'admin'
         controller_password: 'siB24Bsr21yghE3SIMnPQtk3lGLNqB84'
-        job_templates: 'all'
+        #job_templates: 'all'
         #projects: 'all'
-        #all: True
+        all: true
       register: export_output
       delegate_to: localhost
 
