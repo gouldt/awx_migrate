@@ -11,5 +11,5 @@
       delegate_to: localhost
     - name: print data
       debug
-        var: "{{nmap_data.assets}}"
+        msg: "{{nmap_data.assets}}"
       
