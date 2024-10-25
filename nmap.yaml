@@ -6,7 +6,7 @@
 
   tasks:
     - name: run_nmap
-      shell: nmap -T4 -sn -oX - 10.14.0.0/24 
+      shell: nmap -T4 -sn -oX - 10.14.1.0/24 
       register: nmap_data
       delegate_to: localhost
     - name: print data
