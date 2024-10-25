@@ -1,3 +1,15 @@
+---
+- name: Run nmap
+  hosts: localhost
+  connection: local
+  gather_facts: false
 
-
-nmap -T4 -sn -oX - 192.168.224.0/20 192.168.240.0/20
+  tasks:
+    - name: run_nmap
+      shell: nmap -T4 -sn -oX - 10.14.0.0/24 
+      register: nmap_data
+      delegate_to: localhost
+    - name: print data
+      debug
+        var: "{{nmap_data.assets}}"
+      
