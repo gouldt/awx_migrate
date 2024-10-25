@@ -6,7 +6,7 @@
 
   tasks:
     - name: Export all assets
-      awx.awx.export:
+      export:
         controller_host: 'http://10.0.0.215:30408/'
         #validate_certs: false
         controller_username: 'admin'
