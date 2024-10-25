@@ -10,6 +10,6 @@
       register: nmap_data
       delegate_to: localhost
     - name: print data
-      debug
+      debug:
         msg: "{{nmap_data.assets}}"
       
